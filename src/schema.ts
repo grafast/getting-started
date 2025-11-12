@@ -1,5 +1,5 @@
-import { lambda } from "grafast";
 import { typedMakeGrafastSchema } from "./schema-generated.ts";
+import { add } from "./steps/add.ts";
 
 export const schema = typedMakeGrafastSchema({
   typeDefs: /* GraphQL */ `
@@ -12,7 +12,7 @@ export const schema = typedMakeGrafastSchema({
       plans: {
         addTwoNumbers(_, fieldArgs) {
           const { $a, $b } = fieldArgs;
-          return lambda([$a, $b], ([a, b]) => a + b);
+          return add($a, $b);
         },
       },
     },
