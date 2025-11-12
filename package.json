@@ -1,5 +1,9 @@
 {
   "private": true,
+  "dependencies": {
+    "grafast": "^1.0.0-rc.1",
+    "graphql": "^16.12.0"
+  },
   "devDependencies": {
     "prettier": "^3.6.2"
   },
