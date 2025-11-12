@@ -1,6 +1,7 @@
-import { makeGrafastSchema, lambda } from "grafast";
+import { lambda } from "grafast";
+import { typedMakeGrafastSchema } from "./schema-generated.ts";
 
-export const schema = makeGrafastSchema({
+export const schema = typedMakeGrafastSchema({
   typeDefs: /* GraphQL */ `
     type Query {
       addTwoNumbers(a: Int!, b: Int!): Int

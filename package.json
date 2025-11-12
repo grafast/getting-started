@@ -2,6 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "codegen": "graphql-codegen",
     "start": "node src/main.ts"
   },
   "dependencies": {
@@ -9,8 +10,11 @@
     "graphql": "^16.12.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^6.0.2",
+    "@graphql-codegen/typescript": "^5.0.3",
     "@tsconfig/node-ts": "^23.6.1",
     "@tsconfig/node24": "^24.0.1",
+    "graphql-codegen-grafast": "0.0.1-beta.1",
     "prettier": "^3.6.2"
   },
   "engines": {
