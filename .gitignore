@@ -1,0 +1,9 @@
+node_modules/
+/.yarn/*
+!/.yarn/releases
+!/.yarn/releases/*
+!/.yarn/plugins
+!/.yarn/plugins/*
+!/.yarn/patches
+!/.yarn/patches/*
+/Session.vim
